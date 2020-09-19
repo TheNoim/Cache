@@ -1,3 +1,4 @@
+#if canImport(UIKit) || canImport(AppKit)
 import Foundation
 
 public struct ImageWrapper: Codable {
@@ -30,3 +31,4 @@ public struct ImageWrapper: Codable {
     try container.encode(data, forKey: CodingKeys.image)
   }
 }
+#endif
