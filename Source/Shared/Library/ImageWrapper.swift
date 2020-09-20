@@ -1,4 +1,4 @@
-#if canImport(UIKit) || canImport(AppKit)
+#if os(iOS) || os(macOS)
 import Foundation
 
 public struct ImageWrapper: Codable {

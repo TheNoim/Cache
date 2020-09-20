@@ -6,7 +6,7 @@ public extension Storage {
     return storage
   }
 
-#if canImport(UIKit) || canImport(AppKit)
+#if os(iOS) || os(macOS)
   func transformImage() -> Storage<Image> {
     let storage = transform(transformer: TransformerFactory.forImage())
     return storage
